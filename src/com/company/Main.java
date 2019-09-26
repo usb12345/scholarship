@@ -22,7 +22,18 @@ public class Main {
         hafizQuran = input.nextBoolean();
         System.out.println("position holder");
         positionHolder = input.nextBoolean();
+        char operator = input.next().charAt(0);
         Student std=new Student(name,reg_number,fatherIncome,hafizQuran,positionHolder);
+          if (fatherIncome < 10000 && reg_number == 68) {
+            System.out.println("need based scholarship is eligibal");
+
+        } else if (fatherIncome < 10000 && reg_number <= 78 && hafizQuran == true) {
+            System.out.println("hafiz e Quran scholarship is eligibal");
+
+        }
+        else if (reg_number==90 && positionHolder == false){
+            System.out.println("position holder scholarship is eligibal");
+        }
 
 
     }
